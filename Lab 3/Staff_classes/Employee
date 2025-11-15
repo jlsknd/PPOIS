@@ -1,0 +1,39 @@
+class Employee:
+    """Класс сотрудника."""
+    
+    def __init__(self, employee_id, name, position, salary):
+        """
+        Инициализация сотрудника.
+        
+        Args:
+            employee_id: ID сотрудника
+            name: Имя
+            position: Должность
+            salary: Зарплата
+        """
+        self.employee_id = employee_id
+        self.name = name
+        self.position = position
+        self.salary = salary
+        self.hire_date = datetime.now()
+        self.department = None
+        self.is_active = True
+        self.email = None
+        self.phone = None
+        self.emergency_contact = None
+        
+    def assign_department(self, department):
+        """Назначить в отдел."""
+        self.department = department
+        
+    def terminate(self):
+        """Уволить сотрудника."""
+        self.is_active = False
+        
+    def give_raise(self, amount):
+        """Повысить зарплату."""
+        self.salary += amount
+        
+    def get_years_of_service(self):
+        """Получить количество лет работы."""
+        return (datetime.now() - self.hire_date).days / 365
