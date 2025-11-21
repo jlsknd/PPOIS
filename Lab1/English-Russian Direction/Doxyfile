@@ -1,0 +1,62 @@
+# Базовые настройки проекта
+PROJECT_NAME           = "Англо-русский словарь"
+PROJECT_NUMBER         = 1.0
+PROJECT_BRIEF          = "Реализация словаря на бинарном дереве поиска"
+
+# Язык исходного кода
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_FOR_FORTRAN   = NO
+OPTIMIZE_OUTPUT_VHDL   = NO
+EXTENSION_MAPPING      = py=Python
+
+# Исходные файлы
+INPUT                  = .
+FILE_PATTERNS          = *.py 
+RECURSIVE              = YES
+EXCLUDE                = __pycache__/ test_* venv/ htmlcov/
+
+# Извлекать информацию
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+
+# Для Python
+PYTHON_DOCSTRING       = YES
+ALIASES                = "rst=\verbatim embed:rst:leading-asterisk\"
+ALIASES               += "endrst=\endverbatim"
+
+# Вывод
+OUTPUT_DIRECTORY       = docs/
+CREATE_SUBDIRS         = NO
+
+# Генерируемая документация
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_MAN           = NO
+GENERATE_DOCBOOK       = NO
+GENERATE_XML           = NO
+
+# HTML настройки
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_COLORSTYLE_HUE    = 220
+HTML_TIMESTAMP         = YES
+
+# Поиск
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = YES
+
+# Графики
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+
+# Опции для лучшей поддержки Python
+TYPEDEF_HIDES_STRUCT   = YES
+SORT_MEMBER_DOCS       = NO
+PYTHON_DOCSTRING       = YES

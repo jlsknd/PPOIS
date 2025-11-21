@@ -1,0 +1,18 @@
+# Англо-русский словарь
+# Формат: английское_слово:русский_перевод
+
+hello:привет
+world:мир
+python:питон
+programming:программирование
+algorithm:алгоритм
+computer:компьютер
+science:наука
+data:данные
+apple:яблоко
+application:приложение
+book:книга
+cat:кот
+dog:собака
+house:дом
+city:город
