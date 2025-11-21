@@ -1,0 +1,8 @@
+algorithm:алгоритм
+computer:компьютер
+data:данные
+hello:привет
+programming:программирование
+python:питон
+science:наука
+world:мир
